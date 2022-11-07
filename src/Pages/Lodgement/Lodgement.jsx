@@ -1,18 +1,13 @@
-import React from 'react'
-import './Lodgement.css'
-import Header from '../../components/Main/Header';
-import Banner from "../../components/Banner/Banner";
-import backgroundLodgement from "../../Assets/img/backgroundLodgement.png";
+import React from "react";
+import { useParams } from "react-router-dom";
+import "./Lodgement.css";
+import Tags from "../../components/tags/tags";
+import DataLodgement from "../../Assets/Data/DataLodgement.json";
 
-
-function Lodgement() {
-    return(
-        <div className='Lodgement'>
-            <Header/>
-            <Banner text={''} img={backgroundLodgement} />
-            <h1> Lodgement Kasa</h1>
-        </div>
-    )
-}
-
-export default Lodgement
+function FindCard() {
+  const params = useParams()
+  return(
+     DataLodgement.filter((card) => card.id === params.id)
+     )
+   
+  }
