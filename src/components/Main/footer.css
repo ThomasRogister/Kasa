@@ -1,0 +1,9 @@
+footer {
+  background-color: black;
+  height: 100px;
+}
+div.footerLogoText {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}

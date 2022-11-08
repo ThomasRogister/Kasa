@@ -1,10 +1,12 @@
 import React from "react";
-import './tags.css'
+import "./tags.css";
 
-function Tags ({title}) {
-    return(
-        <span className="tag">{title}</span>
-    )
+function Tags({ tags }) {
+  return(
+    tags.map((tag) => (
+        <span className="tag">{tag}</span>
+    ))
+  )
 }
 
-export default Tags
+export default Tags;
