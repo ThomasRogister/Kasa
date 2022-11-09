@@ -7,8 +7,9 @@ import DataLodgement from "../../Assets/Data/DataLodgement.json";
 import Error from "../Error/Error";
 import Carrousel from "../../components/Carrousel/carrousel";
 import Header from "../../components/Main/Header";
+import Footer from "../../components/Main/Footer";
 import DropDown from "../../components/dropDown/dropDown";
-
+import Host from "../../components/host/host";
 
 function FindCard() {
   const params = useParams();
@@ -28,20 +29,17 @@ function FindCard() {
           <div className="cardInfos">
             <h1 className="cardContentTiltle">{title}</h1>
             <p className="cardContentLocation">{location}</p>
-            <div className="cardContentTags">
-              <Tags tags={card?.tags} />
-            </div>
-            <Rating rating={rating}/>
+            <Host host={host} />
+            <Tags tags={card?.tags} />
+            <Rating rating={rating} />
             <DropDown title="Description" content={description} />
             <DropDown title="Équipement" equip={equipments} />
+            <Footer />
           </div>
         </div>
-
-        {/* <div className="cardRating&Host">         
-          
-        </div> */}
       </div>
     );
   }
 }
+
 export default FindCard;
