@@ -24,7 +24,7 @@ function FindCard() {
     return (
       <div className="lodgementCard">
         <Header />
-        <Carrousel pictures={pictures}/>
+        <Carrousel slider={pictures}/>
         <div className="cardContent">
           <div className="cardInfos">
             <h1 className="cardContentTiltle">{title}</h1>

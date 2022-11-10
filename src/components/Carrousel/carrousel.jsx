@@ -1,37 +1,47 @@
-import React from "react";
-import './carrousel.css'
-import { useState } from "react";
-import leftArrow from "../../Assets/img/leftArrow.png"
-import rightArrow from "../../Assets/img/rightArrow.png"
+import React, { useState } from "react";
+import "./carrousel.css";
 
-function Carrousel({pictures}) {
-    const [current, setCurrent] = useState(0)
-    const carrouselLenght = pictures.lenght
+import leftArrow from "../../Assets/img/leftArrow.png";
+import rightArrow from "../../Assets/img/rightArrow.png";
 
-    const nextPict = () => {
-        setCurrent(current === carrouselLenght -1 ? 0 : current +1)
-    }
+function Carrousel ({ slider }) {
+  const [current, setCurrent] = useState(0);
+  const length = slider.length;
 
-    const prevPict = () => {
-        setCurrent(current === 0 ? carrouselLenght -1 : current-1)
-    }
+  const prevSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
 
- return(
-    <div className="carrousel">
+  const nextSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
 
-        {<img onClick={prevPict} className="leftArrow" src={leftArrow} alt="avant"/>}
-        {<img onClick={nextPict} className="leftArrow" src={rightArrow} alt="après"/>}
 
-        {pictures.map((picture, i) => {
-            return(
-                <div className="carrouselPicture">
-                <img key={i} className= {i === current ? "carrousel active picture" : "carrousel picture"} src={picture} alt=" " />
-                </div> 
-                )
-        })
-    }
-    </div>
-   )}
- 
+  return (
+    <section className="slider">
+      <img
+        scr={leftArrow}
+        alt=">"
+        className="leftArrow"
+        onClick={prevSlide}
+      />
+      <img
+        scr={rightArrow}
+        alt="<"
+        className="rightArrow"
+        onClick={nextSlide}
+      />
 
-export default Carrousel
+      {slider.map((picture, i) => {
+        return (
+          <div className={i === current ? "slide active" : "slide"} key={i}>
+            {i === current && (
+              <img src={picture} alt="logement" className="image" />
+            )}
+          </div>
+        );
+      })}
+    </section>
+  );
+};
+export default Carrousel;

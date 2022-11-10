@@ -1,7 +1,39 @@
-.leftArrow {
-  background-color: black;
-}
-.rightArrow {
-  background-color: black;
+.slider {
+
+height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.image {
+  width: 800px;
+  height: 300px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftArrow {
+position: relative;
+  top: 50%;
+right: 25px;
+  height: 3vh;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.rightArrow {
+  position: relative;
+  top: 50%;
+  left: 25px;
+  height: 3vh;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+
+}
