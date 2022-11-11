@@ -3,9 +3,10 @@ import "./Banner.css";
 
 function Banner({text, img}) {
   return (
-    <div className="Banner">
-      <img className="BannerImg" src={img} alt="bannière paysage" />
-      <span className="BannerText">{text}</span>
+    <div className="banner">
+      <img className="bannerImg" src={img} alt="bannière paysage" />
+      <div className="bannerDarkGradient"></div>
+      <span className="bannerText">{text}</span>
     </div>
   );
 }

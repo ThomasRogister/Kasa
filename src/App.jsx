@@ -7,7 +7,7 @@ import Findcard from "./Pages/Lodgement/Lodgement";
 
 function App() {
   return (
-    <div className="App">
+    <div className="routesApp">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />

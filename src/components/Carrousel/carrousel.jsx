@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import "./carrousel.css";
 
-import leftArrow from "../../Assets/img/leftArrow.png";
-import rightArrow from "../../Assets/img/rightArrow.png";
 
-function Carrousel ({ slider }) {
+function Carrousel({ slider }) {
   const [current, setCurrent] = useState(0);
   const length = slider.length;
 
@@ -16,18 +14,18 @@ function Carrousel ({ slider }) {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
-
   return (
     <section className="slider">
       <img
-        scr={leftArrow}
-        alt=">"
         className="leftArrow"
+        src={require("../../Assets/img/leftArrow.png")}
+        alt=""
         onClick={prevSlide}
       />
+
       <img
-        scr={rightArrow}
-        alt="<"
+        src={require("../../Assets/img/rightArrow.png")}
+        alt=""
         className="rightArrow"
         onClick={nextSlide}
       />
@@ -43,5 +41,5 @@ function Carrousel ({ slider }) {
       })}
     </section>
   );
-};
+}
 export default Carrousel;

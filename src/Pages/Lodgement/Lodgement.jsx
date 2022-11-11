@@ -6,8 +6,7 @@ import Rating from "../../components/rating/rating";
 import DataLodgement from "../../Assets/Data/DataLodgement.json";
 import Error from "../Error/Error";
 import Carrousel from "../../components/Carrousel/carrousel";
-import Header from "../../components/Main/Header";
-import Footer from "../../components/Main/Footer";
+
 import DropDown from "../../components/dropDown/dropDown";
 import Host from "../../components/host/host";
 
@@ -23,7 +22,7 @@ function FindCard() {
   } else {
     return (
       <div className="lodgementCard">
-        <Header />
+
         <Carrousel slider={pictures}/>
         <div className="cardContent">
           <div className="cardInfos">
@@ -34,7 +33,7 @@ function FindCard() {
             <Rating rating={rating} />
             <DropDown title="Description" content={description} />
             <DropDown title="Équipement" equip={equipments} />
-            <Footer />
+
           </div>
         </div>
       </div>

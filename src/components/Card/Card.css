@@ -1,0 +1,43 @@
+.card {
+  position: relative;
+  min-height: 340px;
+  min-width: 340px;
+  height: 100%;
+}
+
+
+.cardImg {
+  object-fit: cover;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.darkGradient {
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  border-radius: 10px;
+}
+
+.cardTitle {
+  position: absolute;
+  left: 5.88%;
+  right: 5.88%;
+  top: 78.82%;
+  bottom: 5.88%;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #ffffff;
+}

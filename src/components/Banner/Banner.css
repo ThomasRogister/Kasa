@@ -1,0 +1,35 @@
+.banner {
+  position: absolute;
+
+  height: 223px;
+  left: 100px;
+  right: 100px;
+  top: 171px;
+}
+
+.bannerImg {
+  border-radius: 25px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.bannerDarkGradient {
+  background-color: #000000;
+  border-radius: 25px;
+  height: 100%;
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.bannerText {
+  color: #ffffff;
+  font-size: 48px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

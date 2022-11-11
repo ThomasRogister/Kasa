@@ -4,9 +4,10 @@ import "./Card.css";
 function Card({ id, title, img }) {
   console.log(img);
   return (
-    <div className="Card" id={id}>
-      <img className="CardImg" src={img} alt="card" />
-      <span className="CardTitle">{title}</span>
+    <div className="card" id={id}>
+      <div classname darkGradient></div>
+      <img className="cardImg" src={img} alt="card" />
+      <span className="cardTitle">{title}</span>
     </div>
   );
 }

@@ -1,15 +1,25 @@
 header {
-    align-items: center;
-    display: inline-flex;
-    width: 1240px;
-    height: 68px;
-    padding: 40px 100px;
-    width: 80%;
-  }
+  align-items: center;
+  display: inline-flex;
+  margin: 40px 10%;
+  width: 80%;
+}
+
+.logo{
+  height: 68px;
+}
 
   nav {
     justify-content: flex-end;
     display: flex;
     width: 100%;
-    gap: 40px;
+  }
+
+  .linkOut{
+    color: #ff6060;
+    margin: auto 25px;
+    text-decoration: none;
+  }
+  .linkOut:hover{
+    border-bottom: 2px solid #ff6060;
   }

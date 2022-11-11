@@ -1,6 +1,6 @@
 .slider {
-
-height: 50vh;
+  position: relative;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,9 +15,9 @@ height: 50vh;
 }
 
 .leftArrow {
-position: relative;
+  position: absolute;
   top: 50%;
-right: 25px;
+  right: 25px;
   height: 3vh;
   z-index: 10;
   cursor: pointer;
@@ -25,15 +25,15 @@ right: 25px;
   width: 30px;
   justify-content: center;
   align-items: center;
- 
+  background-color: rgb(0, 0, 0);
 }
 .rightArrow {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 25px;
   height: 3vh;
   z-index: 10;
   cursor: pointer;
   user-select: none;
-
+  background-color: rgb(0, 0, 0);
 }
