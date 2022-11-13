@@ -6,14 +6,13 @@ function DropDown({ title, content, equip }) {
   const [active, setActive] = useState(false);
 
   return (
-    <div className="dropDown" key={`dropDown- ${title}`}>
+    <div className="dropDown" key={`dropDown-${title}`}>
       <div className="dropDownHeader">
-        <span
-          className={`dropDownArrow ${active}`}
-          onClick={() => setActive(!active)}
-        >
+        <div className={`arrow ${active}`} onClick={() => setActive(!active)}>
+          <img className="arrowDrop"src={arrow} alt="" />
+
           <div className="dropDownBtn">{title}</div>
-        </span>
+        </div>
         {active && <div className="dropDownContent">{content}</div>}
         {active && <div className="dropDownEquip">{equip}</div>}
       </div>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./carrousel.css";
 
-
 function Carrousel({ slider }) {
   const [current, setCurrent] = useState(0);
   const length = slider.length;
@@ -16,6 +15,17 @@ function Carrousel({ slider }) {
 
   return (
     <section className="slider">
+     
+      {slider.map((picture, i) => {
+        return (
+          <div className={i === current ? "slide active" : "slide"} key={i}>
+            {i === current && (
+              <img src={picture} alt="logement" className="image" />
+              )}
+          </div>
+        );
+      })}
+    
       <img
         className="leftArrow"
         src={require("../../Assets/img/leftArrow.png")}
@@ -29,16 +39,6 @@ function Carrousel({ slider }) {
         className="rightArrow"
         onClick={nextSlide}
       />
-
-      {slider.map((picture, i) => {
-        return (
-          <div className={i === current ? "slide active" : "slide"} key={i}>
-            {i === current && (
-              <img src={picture} alt="logement" className="image" />
-            )}
-          </div>
-        );
-      })}
     </section>
   );
 }

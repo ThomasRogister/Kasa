@@ -5,9 +5,13 @@ import "./footer.css";
 function Footer() {
   return (
     <footer>
-      <div className="footerlogoText">
-        <img className="logoFooter" src={logoFooter} alt="logo kasa" />
-        <img className="textFooter" src={textFooter} alt="droit kasa" />
+      <div className="footerContainer">
+        <div className="logoFooter">
+          <img src={logoFooter} alt="logo kasa" />
+        </div>
+        <div className="textFooter">
+          <img src={textFooter} alt="droit kasa" />
+        </div>
       </div>
     </footer>
   );

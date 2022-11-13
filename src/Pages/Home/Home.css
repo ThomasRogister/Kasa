@@ -1,24 +1,25 @@
 .home {
- position: relative;
-  color: black;
-  text-align: center;
-  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-.liste-logements{
-  position: absolute;
-  top: 436px;
-  left: 100px;
-  right: 100px;
+.liste-logements {
+  max-width: 100%;
+  padding: 56px 50px;
   background-color: #f6f6f6;
   border-radius: 25px;
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  gap: 50px 60px; 
-  padding: 55px 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 60px;
+  flex-direction: row;
+  display: flex;
 }
 
-Footer {
-  bottom: 0;
+.linkLogement {
+  display: flex;
+  border-radius: 20px;
+  width: 340px;
 }
-

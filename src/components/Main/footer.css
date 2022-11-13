@@ -1,11 +1,15 @@
 footer {
+  display: flex;
   background-color: black;
-  height: 209px;
-
+  flex-direction: column;
+  text-align: center;
 
 }
-div.footerLogoText {
-  align-content: center;
-  display: flex;
-  flex-direction: column;
+
+.footerContainer {
+  padding: 60px 0px 30px 0px;
+}
+
+.logoFooter{
+  margin-bottom: 32px;
 }

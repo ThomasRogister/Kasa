@@ -1,0 +1,9 @@
+
+
+.aboutDropDown {
+
+padding: 0px 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

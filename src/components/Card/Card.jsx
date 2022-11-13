@@ -5,7 +5,7 @@ function Card({ id, title, img }) {
   console.log(img);
   return (
     <div className="card" id={id}>
-      <div classname darkGradient></div>
+      <div className="darkGradient"></div>
       <img className="cardImg" src={img} alt="card" />
       <span className="cardTitle">{title}</span>
     </div>
