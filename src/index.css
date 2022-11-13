@@ -3,13 +3,14 @@ html{
   width: 100%;
 }
 .template{
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
 .content{
-  padding: 0px 100px 160px 100px;
+  padding: 0px 100px 47px 100px;
 }
 body {
   height: 100%;
@@ -25,5 +26,5 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+ 
 

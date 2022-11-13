@@ -1,3 +1,40 @@
-.liste-logement{
-    
+.cardInfos {
+  padding: 24px 0 0 0;
+}
+
+.cardContentTiltle {
+  margin: 0px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 51px;
+  display: flex;
+  flex-direction: row;
+  color: #ff6060;
+}
+
+.cardContentLocation {
+  margin: 0px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  align-items: flex-end;
+  color: #ff6060;
+}
+
+.hostInfos {
+  width: 100%;
+  justify-content: space-between;
+  display: inline-flex;
+}
+
+.tagsLodgement {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 20px 0 24px 0;
 }

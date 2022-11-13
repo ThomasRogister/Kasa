@@ -25,7 +25,7 @@ function Carrousel({ slider }) {
           </div>
         );
       })}
-    
+    <div className="controllers">
       <img
         className="leftArrow"
         src={require("../../Assets/img/leftArrow.png")}
@@ -39,6 +39,7 @@ function Carrousel({ slider }) {
         className="rightArrow"
         onClick={nextSlide}
       />
+      </div>
     </section>
   );
 }

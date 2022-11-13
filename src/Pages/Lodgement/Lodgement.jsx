@@ -22,18 +22,20 @@ function FindCard() {
   } else {
     return (
       <div className="lodgementCard">
-
-        <Carrousel slider={pictures}/>
+        <Carrousel slider={pictures} />
         <div className="cardContent">
           <div className="cardInfos">
-            <h1 className="cardContentTiltle">{title}</h1>
+            <div className="hostInfos">
+              <h1 className="cardContentTiltle">{title}</h1>
+              <Host host={host} />
+            </div>
             <p className="cardContentLocation">{location}</p>
-            <Host host={host} />
+            <div className="tagsLodgement">
             <Tags tags={card?.tags} />
+            </div>
             <Rating rating={rating} />
             <DropDown title="Description" content={description} />
             <DropDown title="Équipement" equip={equipments} />
-
           </div>
         </div>
       </div>

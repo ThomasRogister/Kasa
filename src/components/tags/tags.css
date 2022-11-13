@@ -1,3 +1,16 @@
+.tagContainer{
+
+text-align: center;
+  height: 25px;
+  width: 115px;
+  background: #ff6060;
+  border-radius: 10px;
+}
+
 .tag {
-  color: black;
+
+font-family: 'Montserrat';
+
+
+color: #FFFFFF;
 }
