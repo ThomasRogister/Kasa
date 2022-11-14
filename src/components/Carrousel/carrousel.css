@@ -21,6 +21,8 @@
   display:flex;
   flex-direction: row;
 }
+
+
 .rightArrow{
   position:absolute;
   top:40%;

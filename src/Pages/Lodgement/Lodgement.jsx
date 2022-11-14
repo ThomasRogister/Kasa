@@ -6,9 +6,9 @@ import Rating from "../../components/rating/rating";
 import DataLodgement from "../../Assets/Data/DataLodgement.json";
 import Error from "../Error/Error";
 import Carrousel from "../../components/Carrousel/carrousel";
-
 import DropDown from "../../components/dropDown/dropDown";
 import Host from "../../components/host/host";
+
 
 function FindCard() {
   const params = useParams();
@@ -16,7 +16,7 @@ function FindCard() {
   const card = DataLodgement.find((card) => card.id === params.id);
   const { title, location, rating, host, equipments, description, pictures } =
     card || {};
-
+ 
   if (!card) {
     return <Error />;
   } else {
@@ -30,12 +30,20 @@ function FindCard() {
               <Host host={host} />
             </div>
             <p className="cardContentLocation">{location}</p>
-            <div className="tagsLodgement">
-            <Tags tags={card?.tags} />
+            <div className="tagsStars">
+              <div className="tagsLodgement">
+                <Tags tags={card?.tags} />
+              </div>
+              <Rating rating={rating} />
             </div>
-            <Rating rating={rating} />
-            <DropDown title="Description" content={description} />
-            <DropDown title="Équipement" equip={equipments} />
+            <div className="dropDownLodgement">
+              <div className="dropDownDescri">
+              <DropDown title="Description" content={description} />
+              </div>
+              <div className="dropDownEquipment">
+              <DropDown title="Équipement" content={equipments} />
+              </div>
+            </div>
           </div>
         </div>
       </div>

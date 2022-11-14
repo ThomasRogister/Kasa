@@ -1,19 +1,15 @@
-html{
-  height: 100%;
-  width: 100%;
-}
-.template{
 
+.template{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
 .content{
-  padding: 0px 100px 47px 100px;
+  padding: 0px 100px 250px 100px;
 }
+
 body {
-  height: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -27,4 +23,3 @@ code {
     monospace;
 }
  
-

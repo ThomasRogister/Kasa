@@ -7,6 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import Header from "./components/Main/Header";
 import Footer from "./components/Main/Footer";
 
+
 ReactDOM.render(
   <BrowserRouter>
     <div className="template">
@@ -14,9 +15,9 @@ ReactDOM.render(
       <div className="content">
         <App />
       </div>
-      <footer className="footer">
+      <div className="footer">
         <Footer/>
-      </footer>
+      </div>
     </div>
   </BrowserRouter>,
   document.getElementById("root")

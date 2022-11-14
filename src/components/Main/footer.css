@@ -1,9 +1,9 @@
 footer {
+  width: 100%;
   display: flex;
   background-color: black;
   flex-direction: column;
   text-align: center;
-
 }
 
 .footerContainer {

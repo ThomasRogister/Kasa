@@ -30,6 +30,7 @@
   width: 100%;
   justify-content: space-between;
   display: inline-flex;
+  
 }
 
 .tagsLodgement {
@@ -37,4 +38,21 @@
   flex-direction: row;
   gap: 10px;
   padding: 20px 0 24px 0;
+}
+
+.tagsStars{
+  width: 100%;
+  justify-content: space-between;
+  display: inline-flex;
+  align-items:baseline;
+}
+
+.dropDownLodgement{
+display: flex;
+justify-content: space-between;
+gap: 100px;
+}
+
+.dropDownDescri,.dropDownEquipment{
+  width: 100%;
 }

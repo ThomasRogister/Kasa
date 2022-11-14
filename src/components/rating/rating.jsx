@@ -1,4 +1,5 @@
 import React from "react";
+import './rating.css';
 import redStar from "../../Assets/img/redStar.png";
 import greyStar from "../../Assets/img/greyStar.png";
 
@@ -8,6 +9,7 @@ function Rating({ rating }) {
     <div className="rating">
       {stars.map((star) =>
         rating >= star ? (
+          <div className="redStar">
             <img
             className="ratingStar"
             src={redStar}
@@ -15,13 +17,16 @@ function Rating({ rating }) {
             key={star.toString()}
             alt="étoile"
           />
+          </div>
         ) : (
+          <div className="greyStar">
           <img
             className="ratingStar"
             src={greyStar}
             key={star.toString()}
             alt="étoile"
           />
+          </div>
         )
       )}
     </div>
