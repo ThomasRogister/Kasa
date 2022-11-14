@@ -9,14 +9,13 @@ import Carrousel from "../../components/Carrousel/carrousel";
 import DropDown from "../../components/dropDown/dropDown";
 import Host from "../../components/host/host";
 
-
 function FindCard() {
   const params = useParams();
   console.log(params);
   const card = DataLodgement.find((card) => card.id === params.id);
   const { title, location, rating, host, equipments, description, pictures } =
     card || {};
- 
+
   if (!card) {
     return <Error />;
   } else {
@@ -29,19 +28,19 @@ function FindCard() {
               <h1 className="cardContentTiltle">{title}</h1>
               <Host host={host} />
             </div>
-            <p className="cardContentLocation">{location}</p>
-            <div className="tagsStars">
-              <div className="tagsLodgement">
-                <Tags tags={card?.tags} />
+              <p className="cardContentLocation">{location}</p>
+              <div className="tagsStars">
+                <div className="tagsLodgement">
+                  <Tags tags={card?.tags} />
+                </div>
+                <Rating rating={rating} />
               </div>
-              <Rating rating={rating} />
-            </div>
             <div className="dropDownLodgement">
               <div className="dropDownDescri">
-              <DropDown title="Description" content={description} />
+                <DropDown title="Description" content={description} />
               </div>
               <div className="dropDownEquipment">
-              <DropDown title="Équipement" content={equipments} />
+                <DropDown title="Équipement" content={equipments} />
               </div>
             </div>
           </div>

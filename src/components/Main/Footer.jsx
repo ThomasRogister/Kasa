@@ -10,7 +10,7 @@ function Footer() {
           <img src={logoFooter} alt="logo kasa" />
         </div>
         <div className="textFooter">
-          <img src={textFooter} alt="droit kasa" />
+          <img src={textFooter} alt="" />
         </div>
       </div>
     </footer>

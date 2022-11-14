@@ -2,13 +2,13 @@
   position: relative;
   width: 100%;
   position: relative;
-  height: 450px;
+  height: 415px;
   border-radius: 25px;
   overflow: hidden;
 }
 
 .image{
-  height: 450px;
+  height: 415px;
   width: 100%;
   object-fit: cover;
   border-radius: 25px;
@@ -29,4 +29,17 @@
   right:25px;
   display:flex;
   flex-direction: row;
+}
+
+@media screen and (max-width: 968px) {
+  .slider {
+    height: 225px;
+    border-radius: 10px;
+  }
+
+  .image{
+    height: 225px;
+    border-radius: 10px;
+  }
+
 }

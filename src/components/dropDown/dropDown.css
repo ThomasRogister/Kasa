@@ -40,6 +40,7 @@
   font-weight: 400;
   color: #FF6060;
 }
+
 .dropDownEquip{
   display: flex;
   flex-direction: column;
@@ -48,14 +49,55 @@
   color: #FF6060;
 }
 
-.arrow{
+.arrowDrop{
   text-align: center;
   align-items: center;
-  height: 26px;
+  height: 15px;
   padding-right: 20px;
 }
 
 .arrow.true{
 justify-content: start;
 transform:rotateX(180deg);
+}
+
+
+@media screen and (max-width: 968px) {
+  .dropDown {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 968px) {
+#dropTitle {
+  height: 30px;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #FF6060;
+}
+.dropDown {
+  border-radius: 5px;
+  font-size: 13px;
+  margin-bottom: 20px;
+  line-height: 19px;
+}
+
+.dropDownBtn{
+  padding-left: 10px;
+}
+
+.arrowDrop{
+  height: 9px;
+  padding-right: 10px;
+}
+
+.dropDownContent{
+  padding:15px 6px 15px 10px;
+  font-weight: 400;
+  color: #FF6060;
+}
 }

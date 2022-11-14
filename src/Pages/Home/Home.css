@@ -13,13 +13,53 @@
   justify-content: space-around;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px 60px;
+  gap: 50px;
   flex-direction: row;
-  display: flex;
 }
 
 .linkLogement {
   display: flex;
   border-radius: 20px;
   width: 340px;
+}
+
+
+@media screen and (max-width: 1420px) {
+
+  .liste-logements {
+    flex-direction: column;
+  }
+  
+  .linkLogement {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 100%;
+    height: 340px;
+  }
+}
+
+@media screen and (max-width: 968px){
+  .liste-logements {
+    padding: 30px;
+    border-radius: 15px;
+    gap: 40px;
+   
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .liste-logements {
+  padding: 0;
+  background-color: transparent;
+}
+.linkLogement {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 100%;
+  height: 225px;
+}
+
 }

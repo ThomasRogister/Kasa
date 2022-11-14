@@ -1,1 +1,12 @@
+.dropDownStyle{
+    padding: 0 110px;
+}
 
+@media screen and (max-width: 968px) {
+
+    .dropDownStyle{
+        padding: 0;
+        
+    }
+
+}

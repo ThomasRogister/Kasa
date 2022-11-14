@@ -31,3 +31,38 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 968px) {
+  .banner {
+    position: relative;
+    height: 160px;
+    margin-bottom: 43px;
+  }
+ 
+  .bannerText {
+    font-size: 36px;
+    left: 35%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    position: relative;
+    height: 111px;
+    margin-bottom: 43px;
+  }
+  
+  .bannerText {
+    font-size: 24px;
+    left: 35%;
+  }
+
+  .bannerImg {
+    border-radius: 10px;
+  }
+
+  .bannerDarkGradient {
+    border-radius: 10px;
+  }
+  
+}

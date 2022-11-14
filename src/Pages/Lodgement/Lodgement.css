@@ -56,3 +56,26 @@ gap: 100px;
 .dropDownDescri,.dropDownEquipment{
   width: 100%;
 }
+
+@media screen and (max-width: 968px) {
+  
+  .dropDownLodgement{
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+}
+
+@media screen and (max-width: 968px) {
+  .cardContentTiltle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .cardContentLocation {
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
