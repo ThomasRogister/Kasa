@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import "./lodgement.css";
+import "../../style/style.css";
 import Tags from "../../components/tags/tags";
 import Rating from "../../components/rating/rating";
 import dataLodgement from "../../Assets/data/dataLodgement.json";

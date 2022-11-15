@@ -1,5 +1,5 @@
 import React from "react";
-import './rating.css';
+import '../../style/style.css';
 import redStar from "../../Assets/img/redStar.png";
 import greyStar from "../../Assets/img/greyStar.png";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./card.css";
+import "../../style/style.css";
 
 function Card({ id, title, img }) {
   console.log(img);

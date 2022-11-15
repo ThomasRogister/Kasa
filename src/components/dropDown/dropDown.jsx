@@ -1,5 +1,5 @@
 import React from "react";
-import "./dropDown.css";
+import "../../style/style.css";
 import { useState } from "react";
 import arrow from "../../Assets/img/arrowDropDown.png";
 

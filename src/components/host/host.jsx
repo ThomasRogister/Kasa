@@ -1,5 +1,5 @@
 import React from "react";
-import "./host.css";
+import "../../style/style.css";
 
 function Host({ host }) {
   return (

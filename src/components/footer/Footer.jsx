@@ -1,6 +1,6 @@
 import logoFooter from "../../Assets/img/logoFooter.png";
 import textFooter from "../../Assets/img/textFooter.png";
-import "./footer.css";
+import "../../style/style.css";
 
 function Footer() {
   return (
