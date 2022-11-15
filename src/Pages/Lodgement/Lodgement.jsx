@@ -25,16 +25,18 @@ function FindCard() {
         <div className="cardContent">
           <div className="cardInfos">
             <div className="hostInfos">
-              <h1 className="cardContentTiltle">{title}</h1>
-              <Host host={host} />
-            </div>
-              <p className="cardContentLocation">{location}</p>
-              <div className="tagsStars">
+              <div className="titleLocation">
+                <h1 className="cardContentTiltle">{title}</h1>
+                <p className="cardContentLocation">{location}</p>
                 <div className="tagsLodgement">
                   <Tags tags={card?.tags} />
                 </div>
+              </div>
+              <div className="hostStars">
+                <Host host={host} />
                 <Rating rating={rating} />
               </div>
+            </div>
             <div className="dropDownLodgement">
               <div className="dropDownDescri">
                 <DropDown title="Description" content={description} />

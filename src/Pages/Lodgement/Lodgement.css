@@ -4,6 +4,7 @@
 
 .cardContentTiltle {
   margin: 0px;
+  padding-right: 50px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -28,10 +29,16 @@
 
 .hostInfos {
   width: 100%;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  display: inline-flex;
-  
 }
+
+.hostStars {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .tagsLodgement {
   display: flex;
@@ -40,42 +47,49 @@
   padding: 20px 0 24px 0;
 }
 
-.tagsStars{
-  width: 100%;
+.dropDownLodgement {
+  display: flex;
   justify-content: space-between;
-  display: inline-flex;
-  align-items:baseline;
+  gap: 100px;
+  padding-top: 30px;
 }
 
-.dropDownLodgement{
-display: flex;
-justify-content: space-between;
-gap: 100px;
-}
-
-.dropDownDescri,.dropDownEquipment{
+.dropDownDescri,
+.dropDownEquipment {
   width: 100%;
 }
 
 @media screen and (max-width: 968px) {
-  
-  .dropDownLodgement{
-    padding-top: 20px;
+  .dropDownLodgement {
+    padding-top: 16.5px;
     flex-direction: column;
     gap: 15px;
   }
-  
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 768px) {
   .cardContentTiltle {
     font-size: 18px;
     line-height: 26px;
   }
 
   .cardContentLocation {
-
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .hostInfos {
+    flex-direction: column;
+  }
+
+  .hostStars {
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .tagsLodgement {
+    padding: 10px 0 16.5px 0;
+    width: 100%;
   }
 }

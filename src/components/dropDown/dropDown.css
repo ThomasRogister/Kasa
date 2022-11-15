@@ -70,7 +70,7 @@ transform:rotateX(180deg);
   
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 768px) {
 #dropTitle {
   height: 30px;
   border-radius: 5px;

@@ -6,3 +6,18 @@
 .ratingStar{
     height: 30px;
 }
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .rating{
+        gap: 5px;
+    }
+    
+    .ratingStar{
+        height: 15px;
+    }
+
+}
