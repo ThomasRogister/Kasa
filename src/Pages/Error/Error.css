@@ -1,11 +1,11 @@
-.error{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.title404 {
+.error__404 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -15,23 +15,55 @@
   color: #ff6060;
 }
 
-.text404{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 36px;
-line-height: 51px;
-color: #FF6060;
-padding-bottom: 180px;
-
+.error__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ff6060;
+  padding-bottom: 180px;
 }
 
-.link404{
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 26px;
-text-decoration-line: underline;
-color: #FF6060;
+.error__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration-line: underline;
+  color: #ff6060;
+}
+
+@media screen and (max-width: 968px) {
+  .error__404 {
+    font-size: 180px;
+    line-height: 300px;
+  }
+
+  .error__text {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .error__link {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .error__404 {
+    font-size: 96px;
+    line-height: 136px;
+  }
+
+  .error__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .error__link {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }

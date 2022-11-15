@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.liste-logements {
+.home__lodgementList {
   max-width: 100%;
   padding: 56px 50px;
   background-color: #f6f6f6;
@@ -17,7 +17,7 @@
   flex-direction: row;
 }
 
-.linkLogement {
+.home__link {
   display: flex;
   border-radius: 20px;
   width: 340px;
@@ -26,11 +26,11 @@
 
 @media screen and (max-width: 1420px) {
 
-  .liste-logements {
+  .home__lodgementList {
     flex-direction: column;
   }
   
-  .linkLogement {
+  .home__link {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -40,7 +40,7 @@
 }
 
 @media screen and (max-width: 968px){
-  .liste-logements {
+  .home__lodgementList {
     padding: 30px;
     border-radius: 15px;
     gap: 40px;
@@ -50,11 +50,11 @@
 
 
 @media screen and (max-width: 768px) {
-  .liste-logements {
+  .home__lodgementList {
   padding: 0;
   background-color: transparent;
 }
-.linkLogement {
+.home__link {
   display: flex;
   flex-direction: column;
   border-radius: 10px;

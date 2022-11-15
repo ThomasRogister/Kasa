@@ -3,12 +3,9 @@
     gap: 10px;
 }
 
-.ratingStar{
+.rating__star{
     height: 30px;
 }
-
-
-
 
 
 @media screen and (max-width: 768px) {
@@ -16,7 +13,7 @@
         gap: 5px;
     }
     
-    .ratingStar{
+    .rating__star{
         height: 15px;
     }
 

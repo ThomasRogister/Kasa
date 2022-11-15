@@ -2,13 +2,13 @@ html{
  
   height: 100%;
 }
-.template{
+.index__template{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.content{
+.index__content{
   padding: 0px 100px 300px 100px ;
 }
 
@@ -33,13 +33,13 @@ code {
 }
 
 @media screen and (max-width: 968px) {
-  .content{
+  .index__content{
     padding: 0px 40px 250px 40px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .content{
+  .index__content{
     padding: 0px 20px 250px 20px;
   }
   

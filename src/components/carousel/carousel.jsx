@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./carrousel.css";
+import "./carousel.css";
 
 function Carrousel({ slider }) {
   const [current, setCurrent] = useState(0);
@@ -20,14 +20,14 @@ function Carrousel({ slider }) {
         return (
           <div className={i === current ? "slide active" : "slide"} key={i}>
             {i === current && (
-              <img src={picture} alt="logement" className="image" />
+              <img src={picture} alt="logement" className="slider__image" />
               )}
           </div>
         );
       })}
-    <div className="controllers">
+    <div className="slider__controllers">
       <img
-        className="leftArrow"
+        className="slider__leftArrow"
         src={require("../../Assets/img/leftArrow.png")}
         alt=""
         onClick={prevSlide}
@@ -36,7 +36,7 @@ function Carrousel({ slider }) {
       <img
         src={require("../../Assets/img/rightArrow.png")}
         alt=""
-        className="rightArrow"
+        className="slider__rightArrow"
         onClick={nextSlide}
       />
       </div>

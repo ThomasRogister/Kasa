@@ -1,11 +1,11 @@
-.tagContainer {
+.tag__container {
   display: inline-flex;
   padding: 4px 30px;
   background: #ff6060;
   border-radius: 10px;
 }
 
-.tag {
+.tag__content {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -16,14 +16,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  .tag {
+  .tag__container {
+    padding: 2px 0px;
+    border-radius: 5px;
+  }
+
+  .tag__content {
     font-size: 10px;
     line-height: 14px;
     padding: 0 15px;
-  }
-
-  .tagContainer {
-    padding: 2px 0px;
-    border-radius: 5px;
   }
 }

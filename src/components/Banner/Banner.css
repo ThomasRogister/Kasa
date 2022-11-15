@@ -4,7 +4,7 @@
   margin-bottom: 43px;
 }
 
-.bannerImg {
+.banner__img {
   position: absolute;
   border-radius: 25px;
   height: 100%;
@@ -12,7 +12,7 @@
   object-fit: cover;
 }
 
-.bannerDarkGradient {
+.banner__darkGradient {
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
@@ -23,7 +23,7 @@
   opacity: 0.3;
 }
 
-.bannerText {
+.banner__text {
   color: #ffffff;
   font-size: 48px;
   left: 50%;
@@ -39,7 +39,7 @@
     margin-bottom: 43px;
   }
  
-  .bannerText {
+  .banner__text {
     font-size: 36px;
     left: 35%;
   }
@@ -52,12 +52,12 @@
     margin-bottom: 43px;
   }
   
-  .bannerText {
+  .banner__text {
     font-size: 24px;
     left: 35%;
   }
 
-  .bannerImg {
+  .banner__img {
     border-radius: 10px;
   }
 

@@ -8,20 +8,20 @@ function DropDown({ title, content }) {
 
   return (
     <div className="dropDown" key={`dropDown-${title}`}>
-      <div className="dropDownHeader">
-        <div id="dropTitle">
-          <div className="dropTitle">
-            <div className="dropDownBtn">{title}</div>
+      <div className="dropDown__header">
+        <div id="dropDown__title">
+          <div className="dropDown__title">
+            <div className="dropDown__btn">{title}</div>
             <div
-              className={`arrow ${active}`}
+              className={`dropDown__arrow ${active}`}
               onClick={() => setActive(!active)}
             >
-              <img className="arrowDrop" src={arrow} alt="" />
+              <img className="dropDown__arrowImg" src={arrow} alt="" />
             </div>
           </div>
         </div>
       </div>
-      {active && <div className="dropDownContent">{content}</div>}
+      {active && <div className="dropDown__content">{content}</div>}
       {/* {active && <div className="dropDownEquip">{equip}</div>} */}
     </div>
   );

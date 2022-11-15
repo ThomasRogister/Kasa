@@ -1,19 +1,19 @@
 import React from "react";
-import "./Home.css";
-import DataLodgement from "../../Assets/Data/DataLodgement.json";
+import "./home.css";
+import dataLodgement from "../../Assets/data/dataLodgement.json";
 import { Link } from "react-router-dom";
-import Card from "../../components/Card/Card";
-import Banner from "../../components/Banner/Banner";
+import Card from "../../components/card/card";
+import Banner from "../../components/banner/banner";
 import backgroundHome from "../../Assets/img/backgroundHome.png";
 
 function Home() {
   return (
     <div className="home">
       <Banner text={"Chez vous, partout et ailleurs"} img={backgroundHome} />
-      <div className="liste-logements">
-        {DataLodgement.map((logement) => (
+      <div className="home__lodgementList">
+        {dataLodgement.map((logement) => (
           <Link
-            className="linkLogement"
+            className="home__link"
             key={logement.id}
             to={"/Lodgement/" + logement.id}
           >

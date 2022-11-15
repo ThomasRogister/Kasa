@@ -1,18 +1,18 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import "./Lodgement.css";
+import "./lodgement.css";
 import Tags from "../../components/tags/tags";
 import Rating from "../../components/rating/rating";
-import DataLodgement from "../../Assets/Data/DataLodgement.json";
-import Error from "../Error/Error";
-import Carrousel from "../../components/Carrousel/carrousel";
+import dataLodgement from "../../Assets/data/dataLodgement.json";
+import Error from "../error/error";
+import Carrousel from "../../components/carousel/carousel";
 import DropDown from "../../components/dropDown/dropDown";
 import Host from "../../components/host/host";
 
 function FindCard() {
   const params = useParams();
   console.log(params);
-  const card = DataLodgement.find((card) => card.id === params.id);
+  const card = dataLodgement.find((card) => card.id === params.id);
   const { title, location, rating, host, equipments, description, pictures } =
     card || {};
 
@@ -20,28 +20,28 @@ function FindCard() {
     return <Error />;
   } else {
     return (
-      <div className="lodgementCard">
+      <div className="lodgement">
         <Carrousel slider={pictures} />
-        <div className="cardContent">
-          <div className="cardInfos">
-            <div className="hostInfos">
-              <div className="titleLocation">
-                <h1 className="cardContentTiltle">{title}</h1>
-                <p className="cardContentLocation">{location}</p>
-                <div className="tagsLodgement">
+        <div className="lodgement__content">
+          <div className="lodgement__infos">
+            <div className="lodgement__host">
+              <div className="lodgement__title_location">
+                <h1 className="lodgement__title">{title}</h1>
+                <p className="lodgement__location">{location}</p>
+                <div className="lodgement__tags">
                   <Tags tags={card?.tags} />
                 </div>
               </div>
-              <div className="hostStars">
+              <div className="lodgement__host_stars">
                 <Host host={host} />
                 <Rating rating={rating} />
               </div>
             </div>
-            <div className="dropDownLodgement">
-              <div className="dropDownDescri">
+            <div className="lodgement__dropDown">
+              <div className="lodgement__description">
                 <DropDown title="Description" content={description} />
               </div>
-              <div className="dropDownEquipment">
+              <div className="lodgement__equipment">
                 <DropDown title="Équipement" content={equipments} />
               </div>
             </div>

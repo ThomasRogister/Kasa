@@ -1,11 +1,11 @@
-.hostPicture {
+.host__picture {
  
   border-radius: 50%;
   object-fit: cover;
   height: 64px;
 }
 
-.hostName {
+.host__name {
   display: flex;
   padding-right: 10px;
   width: 80px;
@@ -26,11 +26,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hostPicture {
+  .host__picture {
     height: 32px;
   }
 
-  .hostName {
+  .host__name {
     width: 60px;
     font-size: 12px;
     line-height: 17px;

@@ -7,26 +7,26 @@ footer {
   text-align: center;
 }
 
-.footerContainer {
+.footer__container {
   padding: 60px;
 }
 
-.logoFooter {
+.footer__logo {
   height: 36px;
   margin-bottom: 32px;
 }
 
 @media screen and (max-width: 768px) {
-  .footerContainer {
+  .footer__container {
     padding: 60px;
   }
 
-  .logoFooter {
+  .footer__logo {
     height: 36px;
     margin-bottom: 25px;
   }
 
-  .textFooter img {
+  .footer__imgText img {
     height: 12px;
   }
 }

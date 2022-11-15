@@ -7,14 +7,14 @@
   overflow: hidden;
 }
 
-.image{
+.slider__image{
   height: 415px;
   width: 100%;
   object-fit: cover;
   border-radius: 25px;
 }
 
-.leftArrow{
+.slider__leftArrow{
   height: 79px;
   position:absolute;
   top:40%;
@@ -24,7 +24,7 @@
 }
 
 
-.rightArrow{
+.slider__rightArrow{
   height: 79px;
   position:absolute;
   top:40%;
@@ -39,7 +39,7 @@
     border-radius: 10px;
   }
 
-  .image{
+  .slider__image{
     height: 225px;
     border-radius: 10px;
   }
@@ -48,13 +48,13 @@
 
 @media screen and (max-width: 768px) {
 
-  .leftArrow{
+  .slider__leftArrow{
     height: 20px; 
     top:45%;
     left:8px;
   }
 
-  .rightArrow{
+  .slider__rightArrow{
     height: 20px;   
     top:45%;
     right:8px;

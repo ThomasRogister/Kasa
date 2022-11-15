@@ -1,13 +1,13 @@
 import React from "react";
-import "./Card.css";
+import "./card.css";
 
 function Card({ id, title, img }) {
   console.log(img);
   return (
     <div className="card" id={id}>
-      <div className="darkGradient"></div>
-      <img className="cardImg" src={img} alt="card" />
-      <span className="cardTitle">{title}</span>
+      <div className="card__darkGradient"></div>
+      <img className="card__img" src={img} alt="card" />
+      <span className="card__title">{title}</span>
     </div>
   );
 }

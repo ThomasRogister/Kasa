@@ -6,10 +6,10 @@ import './Header.css'
 function Header() {
     return(
         <header>
-            <img className='logo' src={LOGO} alt='logo Kasa' />
+            <img className='header__logo' src={LOGO} alt='logo Kasa' />
             <nav>
-                <Link to='/' className='linkOut'>Home</Link>
-                <Link to='/About'className='linkOut'>About</Link>
+                <Link to='/' className='header__nav'>Home</Link>
+                <Link to='/About'className='header__nav'>About</Link>
             </nav>
         </header>
     )

@@ -4,8 +4,8 @@ import "./tags.css";
 function Tags({ tags })  {
   return(
     tags.map((tag) => (
-      <div className="tagContainer">
-        <span className="tag">{tag}</span>
+      <div className="tag__container">
+        <span className="tag__content">{tag}</span>
         </div>
     ))
   )

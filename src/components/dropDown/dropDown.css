@@ -8,7 +8,7 @@
   background: #F7F7F7;
 }
 
-#dropTitle {
+#dropDown__title {
   height: 52px;
   border-radius: 10px;
   width: 100%;
@@ -19,7 +19,7 @@
 
 
 
-.dropTitle{
+.dropDown__title{
   width: 100%;
   justify-content: space-between;
   display: inline-flex;
@@ -27,7 +27,7 @@
   
   
 }
-.dropDownBtn{
+.dropDown__btn{
   padding-left: 20px;
   font-weight: 500;
   display: flex;
@@ -35,28 +35,21 @@
   color: #FFFFFF;
 }
 
-.dropDownContent{
+.dropDown__content{
   padding:20px 10px 20px 20px;
   font-weight: 400;
   color: #FF6060;
 }
 
-.dropDownEquip{
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  font-weight: 400;
-  color: #FF6060;
-}
 
-.arrowDrop{
+.dropDown__arrowImg{
   text-align: center;
   align-items: center;
   height: 15px;
   padding-right: 20px;
 }
 
-.arrow.true{
+.dropDown__arrow.true{
 justify-content: start;
 transform:rotateX(180deg);
 }
@@ -71,7 +64,7 @@ transform:rotateX(180deg);
 }
 
 @media screen and (max-width: 768px) {
-#dropTitle {
+#drop__title {
   height: 30px;
   border-radius: 5px;
   width: 100%;
@@ -86,16 +79,16 @@ transform:rotateX(180deg);
   line-height: 19px;
 }
 
-.dropDownBtn{
+.dropDown__btn{
   padding-left: 10px;
 }
 
-.arrowDrop{
+.dropDown__arrowImg{
   height: 9px;
   padding-right: 10px;
 }
 
-.dropDownContent{
+.dropDown__content{
   padding:15px 6px 15px 10px;
   font-weight: 400;
   color: #FF6060;

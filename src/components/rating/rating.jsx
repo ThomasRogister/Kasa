@@ -9,9 +9,9 @@ function Rating({ rating }) {
     <div className="rating">
       {stars.map((star) =>
         rating >= star ? (
-          <div className="redStar">
+          <div className="rating__redStar">
             <img
-            className="ratingStar"
+            className="rating__star"
             src={redStar}
             /* https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Number/toString */
             key={star.toString()}
@@ -19,9 +19,9 @@ function Rating({ rating }) {
           />
           </div>
         ) : (
-          <div className="greyStar">
+          <div className="rating__greyStar">
           <img
-            className="ratingStar"
+            className="rating__star"
             src={greyStar}
             key={star.toString()}
             alt="étoile"
