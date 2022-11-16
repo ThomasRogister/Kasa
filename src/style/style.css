@@ -121,8 +121,12 @@
   padding-top: 30px;
 }
 
-.lodgement__description,
-.lodgement__equipment {
+li {
+  list-style-type: none;
+}
+
+.lodgement__description_content,
+.lodgement__equipment_content {
   width: 100%;
 }
 
@@ -475,6 +479,8 @@
 }
 
 .dropDown__content {
+  display: flex;
+  flex-direction: column;
   padding: 20px 10px 20px 20px;
   font-weight: 400;
   color: #ff6060;

@@ -13,8 +13,14 @@ function FindCard() {
   const params = useParams();
   console.log(params);
   const card = dataLodgement.find((card) => card.id === params.id);
-  const { title, location, rating, host, equipments, description, pictures } =
+  const { title, location, rating, host, description, pictures } =
     card || {};
+
+    const equipments = card.equipments.map((equip) => {
+      return(
+        <li className="lodgement__equipment">{equip}</li>
+      )
+    })
 
   if (!card) {
     return <Error />;
@@ -38,10 +44,10 @@ function FindCard() {
               </div>
             </div>
             <div className="lodgement__dropDown">
-              <div className="lodgement__description">
+              <div className="lodgement__description_content">
                 <DropDown title="Description" content={description} />
               </div>
-              <div className="lodgement__equipment">
+              <div className="lodgement__equipment_content">
                 <DropDown title="Équipement" content={equipments} />
               </div>
             </div>
