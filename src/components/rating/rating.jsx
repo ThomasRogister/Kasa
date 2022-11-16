@@ -1,7 +1,7 @@
 import React from "react";
 import '../../style/style.css';
-import redStar from "../../Assets/img/redStar.png";
-import greyStar from "../../Assets/img/greyStar.png";
+import redStar from "../../assets/img/redStar.png";
+import greyStar from "../../assets/img/greyStar.png";
 
 function Rating({ rating }) {
   const stars = [1, 2, 3, 4, 5];

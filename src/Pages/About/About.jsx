@@ -2,7 +2,7 @@ import React from "react";
 import "../../style/style.css";
 import Banner from "../../components/banner/banner";
 import DropDown from "../../components/dropDown/dropDown";
-import backgroundAbout from "../../Assets/img/backgroundAbout.png";
+import backgroundAbout from "../../assets/img/backgroundAbout.png";
 
 function About() {
   return (

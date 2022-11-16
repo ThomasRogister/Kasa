@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import "../../style/style.css";
 import Tags from "../../components/tags/tags";
 import Rating from "../../components/rating/rating";
-import dataLodgement from "../../Assets/data/dataLodgement.json";
+import dataLodgement from "../../assets/data/dataLodgement.json";
 import Error from "../error/error";
 import Carrousel from "../../components/carousel/carousel";
 import DropDown from "../../components/dropDown/dropDown";

@@ -1,10 +1,10 @@
 import React from "react";
 import "../../style/style.css";
-import dataLodgement from "../../Assets/data/dataLodgement.json";
+import dataLodgement from "../../assets/data/dataLodgement.json";
 import { Link } from "react-router-dom";
 import Card from "../../components/card/card";
 import Banner from "../../components/banner/banner";
-import backgroundHome from "../../Assets/img/backgroundHome.png";
+import backgroundHome from "../../assets/img/backgroundHome.png";
 
 function Home() {
   return (

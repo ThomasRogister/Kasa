@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./Pages/home/home";
-import About from "./Pages/about/about";
-import Error from "./Pages/error/error";
-import Findcard from "./Pages/lodgement/lodgement";
+import Home from "./pages/home/home";
+import About from "./pages/about/about";
+import Error from "./pages/error/error";
+import Findcard from "./pages/lodgement/lodgement";
 
 function App() {
   return (

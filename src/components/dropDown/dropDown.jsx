@@ -1,7 +1,7 @@
 import React from "react";
 import "../../style/style.css";
 import { useState } from "react";
-import arrow from "../../Assets/img/arrowDropDown.png";
+import arrow from "../../assets/img/arrowDropDown.png";
 
 function DropDown({ title, content }) {
   const [active, setActive] = useState(false);

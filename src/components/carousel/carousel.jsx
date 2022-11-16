@@ -28,13 +28,13 @@ function Carrousel({ slider }) {
     <div className="slider__controllers">
       <img
         className="slider__leftArrow"
-        src={require("../../Assets/img/leftArrow.png")}
+        src={require("../../assets/img/leftArrow.png")}
         alt=""
         onClick={prevSlide}
       />
 
       <img
-        src={require("../../Assets/img/rightArrow.png")}
+        src={require("../../assets/img/rightArrow.png")}
         alt=""
         className="slider__rightArrow"
         onClick={nextSlide}
