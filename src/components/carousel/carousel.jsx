@@ -15,30 +15,33 @@ function Carrousel({ slider }) {
 
   return (
     <section className="slider">
-     
       {slider.map((picture, i) => {
         return (
           <div className={i === current ? "slide active" : "slide"} key={i}>
             {i === current && (
               <img src={picture} alt="logement" className="slider__image" />
-              )}
+            )}
           </div>
         );
       })}
-    <div className="slider__controllers">
-      {length > 1 && <img
-        className="slider__leftArrow"
-        src={require("../../assets/img/leftArrow.png")}
-        alt=""
-        onClick={prevSlide}
-      />}
+      <div className="slider__controllers">
+        {length > 1 && (
+          <img
+            className="slider__leftArrow"
+            src={require("../../assets/img/leftArrow.png")}
+            alt=""
+            onClick={prevSlide}
+          />
+        )}
 
-      {length > 1 && <img
-        src={require("../../assets/img/rightArrow.png")}
-        alt=""
-        className="slider__rightArrow"
-        onClick={nextSlide}
-      />}
+        {length > 1 && (
+          <img
+            src={require("../../assets/img/rightArrow.png")}
+            alt=""
+            className="slider__rightArrow"
+            onClick={nextSlide}
+          />
+        )}
       </div>
     </section>
   );
