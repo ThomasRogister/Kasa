@@ -26,19 +26,19 @@ function Carrousel({ slider }) {
         );
       })}
     <div className="slider__controllers">
-      <img
+      {length > 1 && <img
         className="slider__leftArrow"
         src={require("../../assets/img/leftArrow.png")}
         alt=""
         onClick={prevSlide}
-      />
+      />}
 
-      <img
+      {length > 1 && <img
         src={require("../../assets/img/rightArrow.png")}
         alt=""
         className="slider__rightArrow"
         onClick={nextSlide}
-      />
+      />}
       </div>
     </section>
   );
