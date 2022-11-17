@@ -1,5 +1,5 @@
 import React from "react";
-import '../../style/style.css';
+import "../../style/style.css";
 import redStar from "../../assets/img/redStar.png";
 import greyStar from "../../assets/img/greyStar.png";
 
@@ -11,26 +11,25 @@ function Rating({ rating }) {
         rating >= star ? (
           <div className="rating__redStar">
             <img
-            className="rating__star"
-            src={redStar}
-            /* https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Number/toString */
-            key={star.toString()}
-            alt="étoile"
-          />
+              className="rating__star"
+              src={redStar}
+              /* https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Number/toString */
+              key={star.toString()}
+              alt="étoile"
+            />
           </div>
         ) : (
           <div className="rating__greyStar">
-          <img
-            className="rating__star"
-            src={greyStar}
-            key={star.toString()}
-            alt="étoile"
-          />
+            <img
+              className="rating__star"
+              src={greyStar}
+              key={star.toString()}
+              alt="étoile"
+            />
           </div>
         )
       )}
     </div>
   );
 }
-
 export default Rating;

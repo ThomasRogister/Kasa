@@ -24,25 +24,24 @@ function Carrousel({ slider }) {
           </div>
         );
       })}
-      <div className="slider__controllers">
-        {length > 1 && (
+
+      {length > 1 && (
+        <div className="slider__controllers">
           <img
             className="slider__leftArrow"
             src={require("../../assets/img/leftArrow.png")}
             alt=""
             onClick={prevSlide}
           />
-        )}
 
-        {length > 1 && (
           <img
             src={require("../../assets/img/rightArrow.png")}
             alt=""
             className="slider__rightArrow"
             onClick={nextSlide}
           />
-        )}
-      </div>
+        </div>
+      )}
     </section>
   );
 }

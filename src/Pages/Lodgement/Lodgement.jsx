@@ -13,14 +13,11 @@ function FindCard() {
   const params = useParams();
   console.log(params);
   const card = dataLodgement.find((card) => card.id === params.id);
-  const { title, location, rating, host, description, pictures } =
-    card || {};
+  const { title, location, rating, host, description, pictures } = card || {};
 
-    const equipments = card.equipments.map((equip) => {
-      return(
-        <li className="lodgement__equipment">{equip}</li>
-      )
-    })
+  const equipments = card.equipments.map((equip) => {
+    return <li className="lodgement__equipment">{equip}</li>;
+  });
 
   if (!card) {
     return <Error />;

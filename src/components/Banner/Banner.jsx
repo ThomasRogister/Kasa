@@ -1,7 +1,7 @@
 import React from "react";
 import "../../style/style.css";
 
-function Banner({text, img}) {
+function Banner({ text, img }) {
   return (
     <div className="banner">
       <img className="banner__img" src={img} alt="bannière paysage" />
