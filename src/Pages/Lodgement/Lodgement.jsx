@@ -11,7 +11,6 @@ import Host from "../../components/host/host";
 
 function FindCard() {
   const params = useParams();
-  console.log(params);
   const card = dataLodgement.find((card) => card.id === params.id);
   const { title, location, rating, host, description, pictures } = card || {};
 
@@ -32,7 +31,7 @@ function FindCard() {
                 <h1 className="lodgement__title">{title}</h1>
                 <p className="lodgement__location">{location}</p>
                 <div className="lodgement__tags">
-                  <Tags tags={card?.tags} />
+                  <Tags tags={card?.tags}/>
                 </div>
               </div>
               <div className="lodgement__host_stars">
