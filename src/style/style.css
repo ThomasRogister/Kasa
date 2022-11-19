@@ -1,4 +1,4 @@
-/*********** INDEX ***********/
+/* ********** INDEX **********
 /*****************************/
 
 html {
@@ -430,6 +430,13 @@ li {
 
 /*CAROUSEL*/
 
+/* .slide{
+  height:20rem;
+  min-width: 100%;
+  width: 100%;
+  transition : 1s cubic-bezier(0.8, 0.2, 0.8, 1);
+} */
+
 .slider {
   position: relative;
   width: 100%;
@@ -443,7 +450,6 @@ li {
   height: 415px;
   width: 100%;
   object-fit: cover;
-  border-radius: 25px;
 }
 
 .slider__leftArrow {
@@ -472,7 +478,6 @@ li {
 
   .slider__image {
     height: 225px;
-    border-radius: 10px;
   }
 }
 

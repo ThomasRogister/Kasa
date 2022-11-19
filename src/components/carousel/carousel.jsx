@@ -5,18 +5,34 @@ function Carrousel({ slider }) {
   const [current, setCurrent] = useState(0);
   const length = slider.length;
 
-  const prevSlide = () => {
+  const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
 
-  const nextSlide = () => {
+  const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
+
+  //pour effet translate:
+
+  // const prevSlide = () => {
+  //   setCurrent(current - 1 <= 0 ? length - 1 : current - 1 );
+  // };
+
+  // const nextSlide = () => {
+  //   setCurrent(current + 1 === length ? 0 : current + 1);
+  // };
 
   return (
     <section className="slider">
       {slider.map((picture, i) => {
         return (
+          //pour effet translate:
+
+          //   <div className={i === current ? "slide active" : "slide"} style={{transform:`translate(-${current * 100}%)`}} key={i}>
+          //     <img src={picture} alt="logement" className="slider__image" />
+          // </div>
+
           <div className={i === current ? "slide active" : "slide"} key={i}>
             {i === current && (
               <img src={picture} alt="logement" className="slider__image" />
