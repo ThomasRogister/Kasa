@@ -428,9 +428,9 @@ li {
   }
 }
 
-/*CAROUSEL*/
-
-/* .slide{
+/* CAROUSEL*/
+/* 
+.slide{
   height:20rem;
   min-width: 100%;
   width: 100%;
@@ -438,9 +438,9 @@ li {
 } */
 
 .slider {
+  /* display: flex; */
   position: relative;
   width: 100%;
-  position: relative;
   height: 415px;
   border-radius: 25px;
   overflow: hidden;

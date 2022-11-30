@@ -27,7 +27,7 @@ function Carrousel({ slider }) {
     <section className="slider">
       {slider.map((picture, i) => {
         return (
-          //pour effet translate:
+          // pour effet translate:
 
           //   <div className={i === current ? "slide active" : "slide"} style={{transform:`translate(-${current * 100}%)`}} key={i}>
           //     <img src={picture} alt="logement" className="slider__image" />
